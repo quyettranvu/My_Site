@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/style_new.css" rel="stylesheet" />
+    <link href="css/cart.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = 'c720a18cc6944fd1ca33e80de3d7f650522e2808';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <img src="images/images.jpg" />
+        </div>
+        <div class="menu">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://localhost:44337/">Home</a>
+                            <ul class="cap_2">
+                                <li>Your TV Shop</li>
+                                <li>What is your question?</li>
+                                <li>Be happy at our shop</li>
+                            </ul>
+                        </li>
+                        <li><a href="1.html">Products</a></li>
+                        <li><a href="#" id="delivery" onclick="alert('The service is on maintenance')">Where to delivery</a></li>
+                        <li><a href="2.html" class="myform">My Form</a></li>
+                        <li><a href="3.html">Questions and Supports</a></li>
+                    </ul>
+                    <button id="cart">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        Cart
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">My Order</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Product</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Quantity</span>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Summary:</strong>
+                            <span class="cart-total-price">0 Rubles</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Close</button>
+                        <button type="button" class="btn btn-primary order">Payment</button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="content-below">
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_1.jpg" class="img-prd"/>
+                </div>
+                <a href="#" class="content-product-h3">ТV Samsung UE43TU7090U</a>
+                <p> Price: 27990 Rubles</p>
+                <p class="price" hidden>27990</p>
+                <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_2.jpg" class="img-prd" />
+                </div>
+                <a href="#" class="content-product-h3">TV PHILIPS 55PUS6704/60, 55", Ultra HD 4K</a>
+                <p> Price: 39990 Rubles</p>
+                <p class="price" hidden>39990</p>
+                <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_3.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">TV LED HD 40 inch B7000 Series 7</a>
+                    <p> Price: 40990 Rubles</p>
+                    <p class="price" hidden>40990</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_4.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">TV LED ASANZO 40S890 40 INCH</a>
+                    <p> Price: 35700 Rubles</p>
+                    <p class="price" hidden>35700</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_5.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3"> TV LED ASANZO 32 INCH 32AH102</a>
+                    <p> Price: 20000 Rubles</p>
+                    <p class="price" hidden>20000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_6.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">
+                        TV LED ASANZO 40AT320 40 INCH
+                    </a>
+                    <p> Price: 40000 Rubles</p>
+                    <p class="price" hidden>40000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_7.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SMART TV 4K ASANZO 75UV9 75 INCH</a>
+                    <p> Price: 60000 Rubles</p>
+                    <p class="price" hidden>60000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_8.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV LG 4K 55 inch 55UN7290PTF</a>
+                    <p> Price: 64000 Rubles</p>
+                    <p class="price" hidden>64000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_9.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV LG 4K 65 inch 65UN7290PTF</a>
+                    <p> Price: 65000 Rubles</p>
+                    <p class="price" hidden>65000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_10.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV LG 4K 55 inch 55UN7290PTF</a>
+                    <p> Price: 60000 Rubles</p>
+                    <p class="price" hidden>60000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_11.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SAMSUNG SMART TV 4K 55"</a>
+                    <p> Price: 45000 Rubles</p>
+                    <p class="price" hidden>45000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_12.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG SMART TV 4K 55"</a>
+                    <p> Price: 54000 Rubles</p>
+                    <p class="price" hidden>54000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_13.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SONY SMART TV 4K 55"</a>
+                    <p> Price: 64000 Rubles</p>
+                    <p class="price" hidden>64000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/TV_14.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SONY ANDROID TV 4K 55"</a>
+                    <p> Price: 73000 Rubles</p>
+                    <p class="price" hidden>73000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_15.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SAMSUNG SMART TV 4K 43"</a>
+                    <p> Price: 53000 Rubles</p>
+                    <p class="price" hidden>53000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_16.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG OLED TV 4K 55"</a>
+                    <p> Price: 87000 Rubles</p>
+                    <p class="price" hidden>87000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_17.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SONY SMART TV FHD 43"</a>
+                    <p> Price: 33000 Rubles</p>
+                    <p class="price" hidden>33000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_18.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SONY ANDROID TV 4K 65"</a>
+                    <p> Price: 43000 Rubles</p>
+                    <p class="price" hidden>43000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_19.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">CASPER SMART TV 43"</a>
+                    <p> Price: 18000 Rubles</p>
+                    <p class="price" hidden>18000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_20.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG SMART TV 4K 43"</a>
+                    <p> Price: 24000 Rubles</p>
+                    <p class="price" hidden>24000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_21.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SAMSUNG SMART TV 32''</a>
+                    <p> Price: 15000 Rubles</p>
+                    <p class="price" hidden>15000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_22.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SAMSUNG QLED TV 55" 4K</a>
+                    <p> Price: 48000 Rubles</p>
+                    <p class="price" hidden>48000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_23.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SONY SMART TV FHD 43" ANDRO</a>
+                    <p> Price: 17000 Rubles</p>
+                    <p class="price">17000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_24.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG SMART TV 4K 49"</a>
+                    <p> Price: 12000 Rubles</p>
+                    <p class="price" hidden>12000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_25.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SAMSUNG QLED TV 65" 4K"</a>
+                    <p> Price: 21000 Rubles</p>
+                    <p class="price" hidden>21000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_26.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">TCL QLED TV 65" 4K"</a>
+                    <p> Price: 30000 Rubles</p>
+                    <p class="price" hidden>30000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_27.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SAMSUNG NEO QLED TV 55""</a>
+                    <p> Price: 27000 Rubles</p>
+                    <p class="price" hidden>27000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_28.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">TOSHIBA TV 4K 49"""</a>
+                    <p> Price: 35000 Rubles</p>
+                    <p class="price" hidden>35000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_29.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SKYWORTH SMART TV 43 ""</a>
+                    <p> Price: 31000 Rubles</p>
+                    <p class="price" hidden>31000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_30.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">PANASONIC INTERNET TV 55''"</a>
+                    <p> Price: 42000 Rubles</p>
+                    <p class="price" hidden>42000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_31.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">PANASONIC SMART TV 49""</a>
+                    <p> Price: 22000 Rubles</p>
+                    <p class="price" hidden>22000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_32.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SHARP SMART TV 4K 60""</a>
+                    <p> Price: 53000 Rubles</p>
+                    <p class="price" hidden>53000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_33.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SHARP 60""</a>
+                    <p> Price: 28000 Rubles</p>
+                    <p class="price" hidden>28000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_34.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">SHARP SMART TV 40""</a>
+                    <p> Price: 35000 Rubles</p>
+                    <p class="price" hidden>35000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_35.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SKYWORTH SMART TV FHD 42""</a>
+                    <p> Price: 39990 Rubles</p>
+                    <p class="price" hidden>39000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_36.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">SKYWORTH SMART TV FHD 32""</a>
+                    <p> Price: 46000 Rubles</p>
+                    <p class="price" hidden>46000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_37.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG NANOCELL TV 4K 55""</a>
+                    <p> Price: 49000 Rubles</p>
+                    <p class="price" hidden>49000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_38.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG SMART TV 4K 49""</a>
+                    <p> Price: 41000 Rubles</p>
+                    <p class="price" hidden>41000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_39.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG SMART TV 4K 75""</a>
+                    <p> Price: 35700 Rubles</p>
+                    <p class="price" hidden>35700</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_40.png" class="img-prd" />
+                    <a href="#" class="content-product-h3">LG SMART TV 4K 55""</a>
+                    <p> Price: 56000 Rubles</p>
+                    <p class="price" hidden>56000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_37.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV Samsung 4K 43 inch UA43TU8100</a>
+                    <p> Price: 50000 Rubles</p>
+                    <p class="price" hidden>50000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/Tv_42.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Android TV Sony 4K 49 inch KD-49X7500H</a>
+                    <p> Price: 46000 Rubles</p>
+                    <p class="price" hidden>46000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_43.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV Samsung 32 inch UA32T4300</a>
+                    <p> Price: 25000 Rubles</p>
+                    <p class="price" hidden>25000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_44.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV LG 4K 55 inch 55UN7290PTF</a>
+                    <p> Price: 47000 Rubles</p>
+                    <p class="price" hidden>47000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/casper-43fx6200-1-550x340.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">
+                        Smart TV Casper 43 inch 43FX6200
+                    </a>
+                    <p> Price: 25700 Rubles</p>
+                    <p class="price" hidden>25700</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_46.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV Samsung 4K 55 inch UA55TU7000</a>
+                    <p> Price: 38600 Rubles</p>
+                    <p class="price" hidden>38600</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_47.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Smart TV LG 4K 43 inch 43UN7400PTA</a>
+                    <p> Price: 33000 Rubles</p>
+                    <p class="price" hidden>33000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+            <div class="item-pro-home">
+                <div class="box-img-pro-home">
+                    <img src="images/my image/TV_48.jpg" class="img-prd" />
+                    <a href="#" class="content-product-h3">Android TV TCL 40 inch 40S6500</a>
+                    <p> Price: 28000 Rubles</p>
+                    <p class="price" hidden>28000</p>
+                    <a href="#" class="btn-cart"><i class="fa fa-shopping-cart"> Click icon to buy</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="content-bottom-1">
+            <p>
+                Copyright &copy; 2021 by QUYET TRAN VU
+            </p>
+            <div class="social-item">
+                <a target="_blank" href="https://www.facebook.com/quyet.tranvu.3/">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/home?lang=vi">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://vk.com/feed">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/delete_Cart.js"></script>
+    <script src="js/action_menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿@import url('style_new.css');
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial,Verdana;
+    font-size:12px;
+}
+
+.main {
+    width: 1600px;
+    min-height: 500px;
+    padding: 0 1px;
+    margin: 0 auto;
+    background-color:red;
+}
+
+.head {
+    height: 81px;
+    width: 1600px;
+}
+
+.head img{
+    height:200px;
+    width:1600px;
+}
+
+.menu {
+    width: 1600px;
+    margin-top:120px;
+    padding:0;
+}
+
+.content {
+    width: 1600px;
+    min-height: 300px;
+}
+
+.content-left {float:left; width:1000px; min-height:450px;background: #808080}
+.content-right {float:left; width:600px; min-height:450px;}
+
+.content-below {
+    width: 1600px;
+    height:145vh;
+    background-image: url('../images/background4.jpeg');
+}
+
+.content-bottom {
+    width: 1600px;
+    height:225px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color:aqua;
+    font-size:20px;
+}
+
+.item-pro-home {
+    float:left;
+    width:155px; 
+    height:162px; 
+    border:3px solid #4cff00;
+    margin:17px 6px 3px 17px;
+}
+
+.box-img-pro-home{
+    width:138px;
+    height:100px;
+    margin: 5px auto;
+    text-align:center;
+}
+
+.box-img-pro-home img { max-width:138px; max-height:100px; border:none;}
+.box-img-pro-home img:hover { border:1px solid orange;}
+.item-pro-home a{ color:white; text-decoration:none;}
+.item-pro-home p{ color:black; text-decoration:none;text-align:center;}
+.item-pro-home a:hover{ color: red;}
+
+.social-item{
+    margin-right:5%;
+}
+

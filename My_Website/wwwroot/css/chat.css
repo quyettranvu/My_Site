@@ -1,0 +1,12 @@
+﻿.content-below-2 {
+    width: 1600px;
+    height: 80vh;
+    background-image: url('../my page_files/93b94f7e-89fd-4a49-8bfb-170cd41aaf04.jpg');
+}
+
+.text-chat{
+    font-size:20px;
+    color:orangered;
+    background-color:white;
+    text-align:center;
+}

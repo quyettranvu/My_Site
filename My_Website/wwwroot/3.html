@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/style_new.css" rel="stylesheet" />
+    <link href="css/cart.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/chat.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = 'c720a18cc6944fd1ca33e80de3d7f650522e2808';
+        window.smartsupp || (function (d) {
+            var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+            s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+            c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <img src="My Page_files/images.jpg" />
+        </div>
+        <div class="menu">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://localhost:44337/">Home</a>
+                            <ul class="cap_2">
+                                <li>Your TV Shop</li>
+                                <li>What is your question?</li>
+                                <li>Be happy at our shop</li>
+                            </ul>
+                        </li>
+                        <li><a href="1.html">Products</a></li>
+                        <li><a href="#" id="delivery" onclick="alert('The service is on maintenance')">Where to delivery</a></li>
+                        <li><a href="2.html" class="myform">My Form</a></li>
+                        <li><a href="#">Questions and Supports</a></li>
+                    </ul>
+                    <button id="cart">
+                        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                        Cart
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">My Order</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Product</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Quantity</span>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-row">
+
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Summmary:</strong>
+                        <span class="cart-total-price">0 Rubles</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Close</button>
+                    <button type="button" class="btn btn-primary order">Payment</button>
+                </div>
+            </div>
+        </div>
+        <div class="content-below-2">
+            <p class="text-chat">
+                We kindly inform that you can chat with us online at any time!
+            </p>
+            <p class="text-chat">
+                Thank you for your visiting and have a good day ^^!
+            </p>
+        </div>
+        <div class="content-bottom-1">
+            <p>
+                Copyright &copy; 2021 by QUYET TRAN VU
+            </p>
+            <div class="social-item">
+                <a target="_blank" href="https://www.facebook.com/quyet.tranvu.3/">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/home?lang=vi">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a target="_blank" href="https://vk.com/feed">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/Cart.js"></script>
+    <script src="js/delete_Cart.js"></script>
+    <script src="js/action_menu.js"></script>
+    <script src="js/tagname.js"></script>
+</body>
+</html>
